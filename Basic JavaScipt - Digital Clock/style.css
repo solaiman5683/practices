@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(49, 62, 75);
+    color: aliceblue;
+}
+
+* {
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgba(250, 137, 45, 0.719);
+    padding: 20px 0;
+    color: rgb(49, 62, 75);
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.container {
+    display: block;
+    margin: 50px auto;
+    width: 600px;
+    height: 200px;
+    background: rgb(27, 124, 148);
+    position: relative;
+    box-shadow: -1px 8px 13px 2px rgb(46, 46, 46);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 5px;
+}
+.clock{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    width: 67%;
+    height: 8px;
+    background: rgb(250, 137, 45);
+    position: absolute;
+    top:100%;
+    transition: 1s linear;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.hours,
+.minutes,
+.seconds {
+    padding: 20px;
+}
+
+span {
+    color: rgb(211, 209, 209);
+}
+
+.hour,
+.minute,
+.second {
+    font-size: 50px;
+    color: rgb(250, 137, 45);
+}

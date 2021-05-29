@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript :: Word Counting Function</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: rgb(32, 32, 32);
+            margin: 0;
+            padding: 0;
+            color: antiquewhite;
+        }
+
+        * {
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+        h1 {
+            color: antiquewhite;
+            text-align: center;
+            font-size: 40px;
+            letter-spacing: 3px;
+            background-color: rgb(63, 104, 98);
+            padding: 15px 0;
+        }
+
+        #text-box {
+            display: block;
+            margin: auto;
+            width: 60%;
+            height: 50px;
+            outline: none;
+            border-radius: 5px;
+            padding: 20px;
+            resize: none;
+            color: #ffffff;
+            background-color: #2c3e50;
+            border: none;
+
+        }
+
+        #counted-word {
+            margin-top: 30px;
+            font-size: 40px;
+            text-align: center;
+        }
+        @media all and (max-width: 700px) {
+            #text-box {
+                width:80%
+            }
+            #counted-word {
+            font-size: 30px;
+            text-align: center;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Word Counting Function</h1>
+    <input type="text" id="text-box">
+    <div id="counted-word">00</div>
+
+
+<!-- Script Start Here -->
+    <script>
+        // Variable Diclaration
+        let words = document.getElementById('text-box');
+        let countWords = document.getElementById('counted-word')
+
+        //DOM Part
+        words.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                let text = e.target.value
+                countWords.innerHTML = `You Entered ${wordCount(text)} words in the Box </br> and You Entered ${letterCount(text)} Letter in the Box.`
+                words.value = ''
+            }
+        })
+        // Function For Count The Words
+        function wordCount(text) {
+            let countWord = 1            
+            for (let i = 0; i < text.length; i++) {
+                if (text[i] === ' ') {
+                    countWord++
+                }
+            }
+            return countWord
+        }
+        function letterCount(text) {
+            let countLetter = 0
+            for (let i = 0; i < text.length; i++) {
+                if (text[i] !== ' ' && text[i] !== '.' && text[i] !== ',') {
+                    countLetter++
+                }
+            }
+            return countLetter
+        }
+    </script>
+</body>
+
+</html>

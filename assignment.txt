@@ -1,0 +1,4 @@
+Assignment - 
+	feetToMile Function create*
+	woodCalculator - (chair=1, table= 3, khat=5)*
+	

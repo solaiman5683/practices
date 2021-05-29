@@ -1,0 +1,110 @@
+body {
+  background-color: rgb(36, 36, 36);
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: monospace;
+}
+
+h1 {
+  margin-top: 20px;
+  background-color: rgb(42, 102, 82);
+  padding: 10px;
+  color: rgb(36, 36, 36);
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.274);
+}
+
+
+.text {
+  color: rgb(139, 170, 142);
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+.list-group {
+  margin-top: 20px;
+}
+
+
+.list-group-item {
+  background-color: #242424;
+  border: 1px solid rgb(110 228 210 / 77%);
+  color: #f9fafb;
+  text-align: justify;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 15px;
+}
+
+.box {
+  width: 60%;
+  margin: 20px auto;
+  height: 100px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  border-top: none;
+}
+
+.box p {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+
+.input-box {
+  width: 50%;
+  background-color: #242424;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  color: #fff;
+}
+
+.form-group {
+  width: 50%;
+  margin: auto;
+}
+
+.form-group label {
+  color: #fff;
+  font-size: 20px;
+}
+
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid skyblue;
+  font-size: 20px;
+  color: rgba(135, 207, 235, 0.473);
+}
+.fv-head{
+  color: rgb(219, 205, 192);
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(37, 80, 76);
+  letter-spacing: 4px;
+  font-family: Arial;
+}
+input[type="submit"]{
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding: 10px 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+.btn{
+  font-size: 20px;
+  padding: 10px 30px; 
+}
